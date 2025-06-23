@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Georges El-Chater - CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+            padding: 20px;
+        }
+        
+        .cv-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 0;
+        }
+        
+        .sidebar {
+            background: #f8f9fa;
+            padding: 30px;
+            border-right: 1px solid #e9ecef;
+        }
+        
+        .main-content {
+            padding: 30px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section h2 {
+            color: #2c3e50;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        
+        .contact-info {
+            list-style: none;
+        }
+        
+        .contact-info li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-info li::before {
+            content: "▸";
+            color: #3498db;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        
+        .skills-list {
+            list-style: none;
+        }
+        
+        .skills-list li {
+            background: #3498db;
+            color: white;
+            padding: 8px 12px;
+            margin-bottom: 8px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            text-align: center;
+        }
+        
+        .languages {
+            list-style: none;
+        }
+        
+        .languages li {
+            margin-bottom: 8px;
+            padding: 5px 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .language-name {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .language-level {
+            font-size: 0.9em;
+            color: #666;
+        }
+        
+        .experience-item, .education-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .job-title {
+            font-size: 1.2em;
+            color: #2c3e50;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .company {
+            font-weight: bold;
+            color: #3498db;
+            margin-bottom: 3px;
+        }
+        
+        .date-location {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        
+        .responsibilities {
+            list-style: none;
+            margin-top: 10px;
+        }
+        
+        .responsibilities li {
+            margin-bottom: 5px;
+            padding-left: 15px;
+            position: relative;
+        }
+        
+        .responsibilities li::before {
+            content: "•";
+            color: #3498db;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        
+        .profile-text {
+            font-size: 1.05em;
+            line-height: 1.7;
+            color: #555;
+            text-align: justify;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+            
+            .sidebar {
+                border-right: none;
+                border-bottom: 1px solid #e9ecef;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <header class="header">
+            <h1>Georges El-Chater</h1>
+            <p>Étudiant Ingénieur ENSISA</p>
+        </header>
+        
+        <div class="content">
+            <aside class="sidebar">
+                <div class="section">
+                    <h2>Contact</h2>
+                    <ul class="contact-info">
+                        <li>+33 7 68 51 67 46</li>
+                        <li>georges5757c@gmail.com</li>
+                        <li>45 rue de la Fonderie<br>68100 Mulhouse</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <h2>Disponibilités</h2>
+                    <p>Tous les jours, weekends, vacances et soirs inclus</p>
+                </div>
+                
+                <div class="section">
+                    <h2>Compétences</h2>
+                    <ul class="skills-list">
+                        <li>Travail en équipe</li>
+                        <li>Organisation</li>
+                        <li>Communication</li>
+                        <li>Courtoisie</li>
+                        <li>Discipline</li>
+                        <li>Service client</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <h2>Langues</h2>
+                    <ul class="languages">
+                        <li>
+                            <div class="language-name">Français</div>
+                            <div class="language-level">Courant</div>
+                        </li>
+                        <li>
+                            <div class="language-name">Anglais</div>
+                            <div class="language-level">Courant</div>
+                        </li>
+                        <li>
+                            <div class="language-name">Arabe</div>
+                            <div class="language-level">Courant</div>
+                        </li>
+                        <li>
+                            <div class="language-name">Allemand</div>
+                            <div class="language-level">Niveau basique</div>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            
+            <main class="main-content">
+                <div class="section">
+                    <h2>Profil</h2>
+                    <p class="profile-text">
+                        Étudiant en 3ème année à l'École Nationale Supérieure d'Ingénieurs Sud Alsace (ENSISA), 
+                        Université de Haute-Alsace, dans un cursus d'ingénieur de 5 ans. Recherche activement 
+                        un emploi d'été pour acquérir une expérience professionnelle enrichissante dans 
+                        l'environnement de travail français et développer mes compétences pratiques.
+                    </p>
+                </div>
+                
+                <div class="section">
+                    <h2>Expérience Professionnelle</h2>
+                    
+                    <div class="experience-item">
+                        <div class="job-title">Employé de Restauration Rapide</div>
+                        <div class="company">The Grill</div>
+                        <div class="date-location">Été 2024 • Batroun, Liban</div>
+                        <ul class="responsibilities">
+                            <li>Accueil et service clientèle</li>
+                            <li>Préparation culinaire</li>
+                            <li>Gestion de la caisse enregistreuse</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="job-title">Travailleur Polyvalent</div>
+                        <div class="company">Shoppies</div>
+                        <div class="date-location">Été 2023 • Mina, Liban</div>
+                        <ul class="responsibilities">
+                            <li>Accueil et accompagnement de la clientèle</li>
+                            <li>Gestion et suivi des inventaires</li>
+                            <li>Support aux opérations commerciales</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="job-title">Caissier</div>
+                        <div class="company">Style & More Coiffure</div>
+                        <div class="date-location">Été 2022 • Tripoli, Liban</div>
+                        <ul class="responsibilities">
+                            <li>Accueil et service à la clientèle</li>
+                            <li>Gestion des transactions et encaissements</li>
+                            <li>Support administratif</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2>Formation</h2>
+                    
+                    <div class="education-item">
+                        <div class="job-title">École d'Ingénieur</div>
+                        <div class="company">ENSISA - École Nationale Supérieure d'Ingénieurs Sud Alsace</div>
+                        <div class="date-location">2023 - 2028 • Mulhouse, France</div>
+                        <p>Cursus d'ingénieur généraliste (5 ans) - Actuellement en 3ème année</p>
+                    </div>
+                    
+                    <div class="education-item">
+                        <div class="job-title">Baccalauréat</div>
+                        <div class="company">Lycée Alphonse de Lamartine</div>
+                        <div class="date-location">2020 - 2023 • Lycée français</div>
+                        <p>Formation secondaire dans le système éducatif français</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
